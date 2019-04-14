@@ -1,4 +1,5 @@
-#include "../math2/gcd.h"
+#include "p3.h"
+#include "../p2/p2.h"
 
 #include <numeric>
 

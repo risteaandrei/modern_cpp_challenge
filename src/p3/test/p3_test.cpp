@@ -1,17 +1,17 @@
-#include "../lcm.cpp"
+#include "../p3.cpp"
 
-TEST(lcm, basic) { 
+TEST(p3, basic) { 
     ASSERT_EQ(12, lcm(4, 6));
 }
 
-TEST(lcm, zero) { 
+TEST(p3, zero) { 
     ASSERT_EQ(0, lcm(4, 0));
 }
 
-TEST(lcm, one) { 
+TEST(p3, one) { 
     ASSERT_EQ(4, lcm(4, 1));
 }
 
-TEST(lcm, vector) { 
+TEST(p3, vector) { 
     ASSERT_EQ(60, lcmr({4, 1, 3, 5, 6, 15}));
 }

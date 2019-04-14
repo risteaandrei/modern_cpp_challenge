@@ -1,4 +1,4 @@
-#include "gcd.h"
+#include "p2.h"
 
 unsigned int gcd(unsigned int const a, unsigned int const b) {
     // Euclid algorithm
