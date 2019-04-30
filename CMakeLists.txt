@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.1)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
  
 # Locate GTest
 find_package(GTest REQUIRED)
@@ -6,7 +10,6 @@ include_directories(${GTEST_INCLUDE_DIRS})
 
 file(GLOB_RECURSE SRCS p*.cpp)
 file(GLOB_RECURSE TEST_SRCS test_*.cpp) 
-message(${TEST_SRCS})
 
 SET (TEST_SRCS ${SRCS} ${TEST_SRCS} gtest/all_tests.cpp)
  
