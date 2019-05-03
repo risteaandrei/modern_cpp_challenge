@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../p4.h"
+#include "../p04.h"
 
 TEST(p4, basic) { 
     ASSERT_EQ(11, largest_prime(12));

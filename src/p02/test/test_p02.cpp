@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../p2.h"
+#include "../p02.h"
 
 TEST(p2, basic) { 
     ASSERT_EQ(2, gcd(4, 6));

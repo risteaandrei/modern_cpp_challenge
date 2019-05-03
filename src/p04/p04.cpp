@@ -1,4 +1,4 @@
-#include "p4.h"
+#include "p04.h"
 
 bool is_prime(unsigned int number) {
     for (unsigned int i = 2; i * i < number; ++i) {
