@@ -1,18 +1,5 @@
-cmake_minimum_required(VERSION 3.1)
-
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-
-find_package(GTest REQUIRED)
-include_directories(${GTEST_INCLUDE_DIRS})
-
-find_package(Boost REQUIRED system)
-
-add_subdirectory(src/p96/test)
-
 # Add source files
-file(GLOB_RECURSE SRCS  *.cpp)
+file(SRCS  *.cpp)
 list(FILTER SRCS EXCLUDE REGEX ".*(test_|all_tests|CMake).*")
 list(FILTER SRCS EXCLUDE REGEX ".*/p96/test/.*")
 # Add test files

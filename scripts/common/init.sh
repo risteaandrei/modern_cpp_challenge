@@ -1,5 +1,6 @@
 MOUNT_PATH="/src"
 BUILD_DIR="build"
 BUILD_PATH="$MOUNT_PATH/$BUILD_DIR"
-DOCKER_IMAGE="risteaandrei/ubuntu_cpp_gtest"
+DOCKER_IMAGE="risteaandrei/ubuntu_cpp"
 RUN="docker run --rm -v $(PWD)/..:$MOUNT_PATH $DOCKER_IMAGE bash -c "
+RUN_CONTAINER="docker run -it -v $(PWD)/..:$MOUNT_PATH --workdir=$MOUNT_PATH $DOCKER_IMAGE bash"
